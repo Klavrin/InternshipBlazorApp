@@ -1,0 +1,31 @@
+﻿services:
+  internshipblazorapp:
+    image: internshipblazorapp
+    build:
+      context: .
+      dockerfile: InternshipBlazorApp/InternshipBlazorApp/Dockerfile
+
+  internshipblazorapp.client:
+    image: internshipblazorapp.client
+    build:
+      context: .
+      dockerfile: InternshipBlazorApp/InternshipBlazorApp.Client/Dockerfile
+
+  internshipblazorapp.server:
+    image: internshipblazorapp.server
+    build:
+      context: .
+      dockerfile: InternshipBlazorApp.Server/Dockerfile
+
+  webapplication1:
+    image: webapplication1
+    build:
+      context: .
+      dockerfile: InternshipBlazorApp/WebApplication1/Dockerfile
+
+  internshipblazorapp.server-1:
+    image: internshipblazorapp.server-1
+    build:
+      context: .
+      dockerfile: InternshipBlazorApp/InternshipBlazorApp.Server/Dockerfile
+
